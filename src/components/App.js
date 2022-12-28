@@ -30,13 +30,13 @@ const App = () => {
       <button id="button" onClick={onButtonClick}>Click</button>
        <ul id="list">
 
-      <List listx={list.map((element,index)=>{
+      {list.map((element,index)=>{
         return(
           <li className="items" key={element + index}>
             {element}
           </li>
         )
-      })} />
+      })} 
       </ul>
     </div>
   );
