@@ -29,7 +29,14 @@ const App = () => {
       <input id="input" onChange={onInputChange} />
       <button id="button" onClick={onButtonClick}>Click</button>
        <ul id="list">
-      <List listx={list} />
+
+      <List listx={list.map((element,index)=>{
+        return(
+          <li className="items" key={element + index}>
+            {element}
+          </li>
+        )
+      })} />
       </ul>
     </div>
   );
