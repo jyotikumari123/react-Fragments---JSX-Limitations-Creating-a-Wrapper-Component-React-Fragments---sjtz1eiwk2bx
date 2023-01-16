@@ -5,8 +5,9 @@ import ListItems from './ListItems';
   return(
 
     <>
-      <ListItems valuex={i}/>
-    
+    {listx.map((value)=>
+      <ListItems valuex={value}/>
+      )}
     </>
   )
 }
